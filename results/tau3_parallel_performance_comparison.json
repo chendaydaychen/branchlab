@@ -1,0 +1,81 @@
+{
+  "experiment": {
+    "benchmark": "tau3 airline task 11",
+    "model": "deepseek/deepseek-flash",
+    "candidates": 3,
+    "base_seed": 720,
+    "temperature": 0.2,
+    "execution": "parallel"
+  },
+  "rows": {
+    "2pl": {
+      "success": 3,
+      "db_match": 3,
+      "wallclock_s": 36.752232249,
+      "cost_usd": 0.023180748,
+      "physical_reads": 19
+    },
+    "occ": {
+      "success": 3,
+      "db_match": 3,
+      "wallclock_s": 46.746956594999986,
+      "cost_usd": 0.02814678,
+      "physical_reads": 15
+    },
+    "branchlab": {
+      "success": 3,
+      "db_match": 3,
+      "wallclock_s": 25.69063039400001,
+      "cost_usd": 0.008665451999999999,
+      "physical_reads": 6
+    }
+  },
+  "comparisons": {
+    "2pl": {
+      "wallclock_s": {
+        "baseline": 36.752232249,
+        "optimized": 25.69063039400001,
+        "reduction_pct": 30.097768701657486,
+        "speedup_x": 1.4305694988933944
+      },
+      "cost_usd": {
+        "baseline": 0.023180748,
+        "optimized": 0.008665451999999999,
+        "reduction_pct": 62.617893089558635,
+        "speedup_x": 2.675076614583983
+      },
+      "physical_reads": {
+        "baseline": 19,
+        "optimized": 6,
+        "reduction_pct": 68.42105263157895,
+        "speedup_x": 3.1666666666666665
+      }
+    },
+    "occ": {
+      "wallclock_s": {
+        "baseline": 46.746956594999986,
+        "optimized": 25.69063039400001,
+        "reduction_pct": 45.043202241859184,
+        "speedup_x": 1.8196111141717113
+      },
+      "cost_usd": {
+        "baseline": 0.02814678,
+        "optimized": 0.008665451999999999,
+        "reduction_pct": 69.21334518548836,
+        "speedup_x": 3.2481606268201593
+      },
+      "physical_reads": {
+        "baseline": 15,
+        "optimized": 6,
+        "reduction_pct": 60.0,
+        "speedup_x": 2.5
+      }
+    }
+  },
+  "branchlab_breakdown": {
+    "prefix_wallclock_s": 20.047574032,
+    "continuation_wallclock_s": 5.64305636200001,
+    "scheduler_probe_cost_usd": 0.0009751200000000003,
+    "semantic_rebases": 3
+  }
+}

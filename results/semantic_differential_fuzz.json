@@ -1,0 +1,24 @@
+{
+  "seed": 20260922,
+  "trials_per_workload": 100000,
+  "seats": {
+    "trials": 100000,
+    "oracle_accepts": 65890,
+    "semantic_false_accepts": 0,
+    "semantic_false_rejects": 0,
+    "strict_false_accepts": 0,
+    "strict_false_rejects": 58035,
+    "rc_false_accepts": 32573,
+    "rc_false_rejects": 0
+  },
+  "tatp": {
+    "trials": 100000,
+    "oracle_accepts": 24535,
+    "semantic_false_accepts": 0,
+    "semantic_false_rejects": 0,
+    "strict_false_accepts": 0,
+    "strict_false_rejects": 16755,
+    "rc_false_accepts": 11896,
+    "rc_false_rejects": 0
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "mode": "reuse",
+  "seed": 1,
+  "workers": 4,
+  "tasks": 20,
+  "candidates_per_task": 1,
+  "hot_flights": 2,
+  "think_ms": 5,
+  "discovery_ms": 20,
+  "operations": 20,
+  "committed": 20,
+  "failed": 0,
+  "aborts": 15,
+  "retry_rate": 0.75,
+  "throughput_ops_s": 42.78131795204111,
+  "elapsed_s": 0.46749377899999445,
+  "latency_ms": {
+    "p50": 19.939476000004674,
+    "p95": 156.57481525000634,
+    "mean": 50.24243515000677
+  },
+  "lock_wait_ms_total": 0.0,
+  "discovery_executions": 20,
+  "discovery_reuse_hits": 0
+}

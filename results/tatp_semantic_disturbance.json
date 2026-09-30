@@ -1,0 +1,11 @@
+{
+  "repetitions_per_case": 100,
+  "semantic_location_rebase": 100,
+  "strict_version_reject": 100,
+  "missing_access_reject": 100,
+  "missing_subscriber_reject": 100,
+  "false_accepts": 0,
+  "false_rejects": 0,
+  "semantic_violations": 0,
+  "business_invariant_violations": 0
+}

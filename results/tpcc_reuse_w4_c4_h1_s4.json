@@ -1,0 +1,21 @@
+{
+  "workload": "tpcc-derived-new-order",
+  "mode": "reuse",
+  "seed": 4,
+  "workers": 4,
+  "tasks": 40,
+  "candidates_per_task": 4,
+  "hot_items": 1,
+  "operations": 160,
+  "committed": 160,
+  "failed": 0,
+  "aborts": 92,
+  "throughput_ops_s": 42.185148129379684,
+  "latency_ms": {
+    "p50": 46.88160599994262,
+    "p95": 237.56549040005552
+  },
+  "lock_wait_ms_total": 0.0,
+  "discovery_executions": 40,
+  "discovery_reuse_hits": 120
+}

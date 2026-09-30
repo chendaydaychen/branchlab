@@ -1,0 +1,30 @@
+{
+  "workload": "seats-derived-candidate-reservation",
+  "official_benchmark_result": false,
+  "mode": "reuse_strict",
+  "semantic_validation": false,
+  "shared_prefix_reuse": true,
+  "winner_only": true,
+  "seed": 2,
+  "workers": 8,
+  "tasks": 40,
+  "candidates_per_task": 8,
+  "hot_flights": 40,
+  "discovery_ms": 20,
+  "think_ms": 10,
+  "retry_limit": 12,
+  "operations": 320,
+  "committed": 320,
+  "failed": 0,
+  "aborts": 0,
+  "throughput_ops_s": 246.25458890616818,
+  "latency_ms": {
+    "p50": 26.067377499998656,
+    "p95": 32.79132730000427,
+    "p99": 39.03567130999505
+  },
+  "lock_wait_ms_total": 0.0,
+  "discovery_executions": 40,
+  "discovery_reuse_hits": 280,
+  "invariant_violations": 0
+}

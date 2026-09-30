@@ -1,0 +1,79 @@
+{
+  "contracts": 5,
+  "exact_accepted": 5,
+  "wrong_branch_rejected": 5,
+  "wrong_snapshot_rejected": 5,
+  "changed_write_rejected": 5,
+  "rows": [
+    {
+      "task_id": "12",
+      "operation": "update_reservation_baggages",
+      "exact_accepted": true,
+      "wrong_branch_rejected": true,
+      "wrong_snapshot_rejected": true,
+      "changed_write_rejected": true,
+      "reasons": {
+        "exact": "compiled-contract-authorized",
+        "wrong_branch": "contract-branch-mismatch",
+        "wrong_snapshot": "contract-snapshot-mismatch",
+        "changed_write": "contract-write-intent-mismatch"
+      }
+    },
+    {
+      "task_id": "39",
+      "operation": "cancel_reservation",
+      "exact_accepted": true,
+      "wrong_branch_rejected": true,
+      "wrong_snapshot_rejected": true,
+      "changed_write_rejected": true,
+      "reasons": {
+        "exact": "compiled-contract-authorized",
+        "wrong_branch": "contract-branch-mismatch",
+        "wrong_snapshot": "contract-snapshot-mismatch",
+        "changed_write": "contract-write-intent-mismatch"
+      }
+    },
+    {
+      "task_id": "40",
+      "operation": "update_reservation_passengers",
+      "exact_accepted": true,
+      "wrong_branch_rejected": true,
+      "wrong_snapshot_rejected": true,
+      "changed_write_rejected": true,
+      "reasons": {
+        "exact": "compiled-contract-authorized",
+        "wrong_branch": "contract-branch-mismatch",
+        "wrong_snapshot": "contract-snapshot-mismatch",
+        "changed_write": "contract-write-intent-mismatch"
+      }
+    },
+    {
+      "task_id": "15",
+      "operation": "update_reservation_flights",
+      "exact_accepted": true,
+      "wrong_branch_rejected": true,
+      "wrong_snapshot_rejected": true,
+      "changed_write_rejected": true,
+      "reasons": {
+        "exact": "compiled-contract-authorized",
+        "wrong_branch": "contract-branch-mismatch",
+        "wrong_snapshot": "contract-snapshot-mismatch",
+        "changed_write": "contract-write-intent-mismatch"
+      }
+    },
+    {
+      "task_id": "20",
+      "operation": "book_reservation",
+      "exact_accepted": true,
+      "wrong_branch_rejected": true,
+      "wrong_snapshot_rejected": true,
+      "changed_write_rejected": true,
+      "reasons": {
+        "exact": "compiled-contract-authorized",
+        "wrong_branch": "contract-branch-mismatch",
+        "wrong_snapshot": "contract-snapshot-mismatch",
+        "changed_write": "contract-write-intent-mismatch"
+      }
+    }
+  ]
+}

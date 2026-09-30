@@ -1,0 +1,19 @@
+# Preserve LF endings for scripts run in WSL. Executable bits are managed by Git.
+*.sh text eol=lf
+*.py text eol=lf
+*.sql text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.svg text eol=lf
+
+# Binary figures and data should never be line-ending converted.
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.zip binary
+*.db binary
+*.sqlite binary

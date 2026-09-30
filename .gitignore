@@ -1,0 +1,56 @@
+# Secrets and machine-local configuration. Keep .env.example as documentation.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*_api_key
+*_secret
+credentials.json
+secrets.json
+
+# Python environments, build products, and caches.
+.venv/
+.venv-*/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+
+# Independently cloned upstream repositories and downloaded datasets.
+# Exact revisions and sources are recorded in UPSTREAM_SOURCES.md.
+/external/
+/vendor/
+/data/
+/datasets/
+/downloads/
+
+# Local runs and temporary outputs. Curated results/ and figures/ are retained.
+/results/matrix_logs/
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+/tmp/
+/scratch/
+/checkpoints/
+
+# Editor / OS metadata.
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/

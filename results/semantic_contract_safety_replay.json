@@ -1,0 +1,352 @@
+{
+  "contracts": 5,
+  "mutation_trials": 38,
+  "detected": 38,
+  "restored": 38,
+  "safe_after_hardening": 38,
+  "failures": [],
+  "trials": [
+    {
+      "task_id": "12",
+      "operation": "update_reservation_baggages",
+      "field": "authorization",
+      "removed": "authenticated_user",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "12",
+      "operation": "update_reservation_baggages",
+      "field": "authorization",
+      "removed": "explicit_user_confirmation",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "12",
+      "operation": "update_reservation_baggages",
+      "field": "hard_predicates",
+      "removed": "baggage_not_decreased",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "12",
+      "operation": "update_reservation_baggages",
+      "field": "hard_predicates",
+      "removed": "reservation_active",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "12",
+      "operation": "update_reservation_baggages",
+      "field": "hard_predicates",
+      "removed": "reservation_exists",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "12",
+      "operation": "update_reservation_baggages",
+      "field": "hard_predicates",
+      "removed": "reservation_owned_by_user",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "39",
+      "operation": "cancel_reservation",
+      "field": "authorization",
+      "removed": "authenticated_user",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "39",
+      "operation": "cancel_reservation",
+      "field": "authorization",
+      "removed": "explicit_user_confirmation",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "39",
+      "operation": "cancel_reservation",
+      "field": "hard_predicates",
+      "removed": "cancellation_policy_eligible",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "39",
+      "operation": "cancel_reservation",
+      "field": "hard_predicates",
+      "removed": "no_segment_flown",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "39",
+      "operation": "cancel_reservation",
+      "field": "hard_predicates",
+      "removed": "refund_destination_unchanged",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "39",
+      "operation": "cancel_reservation",
+      "field": "hard_predicates",
+      "removed": "reservation_active",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "39",
+      "operation": "cancel_reservation",
+      "field": "hard_predicates",
+      "removed": "reservation_exists",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "39",
+      "operation": "cancel_reservation",
+      "field": "hard_predicates",
+      "removed": "reservation_owned_by_user",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "40",
+      "operation": "update_reservation_passengers",
+      "field": "authorization",
+      "removed": "authenticated_user",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "40",
+      "operation": "update_reservation_passengers",
+      "field": "authorization",
+      "removed": "explicit_user_confirmation",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "40",
+      "operation": "update_reservation_passengers",
+      "field": "hard_predicates",
+      "removed": "passenger_count_unchanged",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "40",
+      "operation": "update_reservation_passengers",
+      "field": "hard_predicates",
+      "removed": "reservation_active",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "40",
+      "operation": "update_reservation_passengers",
+      "field": "hard_predicates",
+      "removed": "reservation_exists",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "40",
+      "operation": "update_reservation_passengers",
+      "field": "hard_predicates",
+      "removed": "reservation_owned_by_user",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "15",
+      "operation": "update_reservation_flights",
+      "field": "authorization",
+      "removed": "authenticated_user",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "15",
+      "operation": "update_reservation_flights",
+      "field": "authorization",
+      "removed": "explicit_user_confirmation",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "15",
+      "operation": "update_reservation_flights",
+      "field": "hard_predicates",
+      "removed": "destination_unchanged",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "15",
+      "operation": "update_reservation_flights",
+      "field": "hard_predicates",
+      "removed": "origin_unchanged",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "15",
+      "operation": "update_reservation_flights",
+      "field": "hard_predicates",
+      "removed": "payment_method_valid",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "15",
+      "operation": "update_reservation_flights",
+      "field": "hard_predicates",
+      "removed": "reservation_active",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "15",
+      "operation": "update_reservation_flights",
+      "field": "hard_predicates",
+      "removed": "reservation_exists",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "15",
+      "operation": "update_reservation_flights",
+      "field": "hard_predicates",
+      "removed": "reservation_owned_by_user",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "15",
+      "operation": "update_reservation_flights",
+      "field": "hard_predicates",
+      "removed": "seats_sufficient",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "15",
+      "operation": "update_reservation_flights",
+      "field": "hard_predicates",
+      "removed": "target_flight_available",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "15",
+      "operation": "update_reservation_flights",
+      "field": "hard_predicates",
+      "removed": "trip_type_unchanged",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "20",
+      "operation": "book_reservation",
+      "field": "authorization",
+      "removed": "authenticated_user",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "20",
+      "operation": "book_reservation",
+      "field": "authorization",
+      "removed": "explicit_user_confirmation",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "20",
+      "operation": "book_reservation",
+      "field": "hard_predicates",
+      "removed": "booking_passenger_limit_respected",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "20",
+      "operation": "book_reservation",
+      "field": "hard_predicates",
+      "removed": "cabin_consistent",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "20",
+      "operation": "book_reservation",
+      "field": "hard_predicates",
+      "removed": "payment_method_valid",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "20",
+      "operation": "book_reservation",
+      "field": "hard_predicates",
+      "removed": "seats_sufficient",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    },
+    {
+      "task_id": "20",
+      "operation": "book_reservation",
+      "field": "hard_predicates",
+      "removed": "target_flight_available",
+      "detected": true,
+      "restored": true,
+      "safe_after_hardening": true
+    }
+  ]
+}

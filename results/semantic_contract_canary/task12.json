@@ -1,0 +1,91 @@
+{
+  "task_id": "12",
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 3519,
+    "completion_tokens": 262,
+    "total_tokens": 3781,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 3519
+  },
+  "prompt_sha256": "1407db4328c192ed82e076f01b0de25f38cc9a8bb5ec7c412495d1b0c9fc880b",
+  "raw": "{\"version\":\"branchlab.contract.v1\",\"task_id\":\"12\",\"operation\":\"update_reservation_baggages\",\"authorization\":[\"authenticated_user\",\"explicit_user_confirmation\"],\"hard_predicates\":[\"reservation_exists\",\"reservation_owned_by_user\",\"reservation_active\",\"baggage_not_decreased\",\"passenger_count_unchanged\",\"no_segment_flown\"],\"semantic_dependencies\":[\"reservation.user_id\",\"reservation.reservation_id\",\"reservation.passengers\",\"reservation.total_baggages\",\"reservation.nonfree_baggages\",\"user.membership\"],\"tolerated_changes\":[\"unrelated_field_change\"],\"write_effects\":[\"reservation.total_baggages := 2\",\"reservation.nonfree_baggages := 0\"],\"source_evidence\":[\"User: 'please go ahead and add the 2 checked bags under my name using my Gold membership'\",\"Policy: 'The user can add but not remove checked bags.'\",\"Policy: 'Before taking any actions that update the booking database ... you must list the action details and obtain explicit user confirmation (yes) to proceed.'\",\"Reservation YAX4DR belongs to user chen_lee_6825 with total_baggages 0\"]}",
+  "schema_valid": true,
+  "contract": {
+    "version": "branchlab.contract.v1",
+    "task_id": "12",
+    "operation": "update_reservation_baggages",
+    "authorization": [
+      "authenticated_user",
+      "explicit_user_confirmation"
+    ],
+    "hard_predicates": [
+      "reservation_exists",
+      "reservation_owned_by_user",
+      "reservation_active",
+      "baggage_not_decreased",
+      "passenger_count_unchanged",
+      "no_segment_flown"
+    ],
+    "semantic_dependencies": [
+      "reservation.user_id",
+      "reservation.reservation_id",
+      "reservation.passengers",
+      "reservation.total_baggages",
+      "reservation.nonfree_baggages",
+      "user.membership"
+    ],
+    "tolerated_changes": [
+      "unrelated_field_change"
+    ],
+    "write_effects": [
+      "reservation.total_baggages := 2",
+      "reservation.nonfree_baggages := 0"
+    ],
+    "source_evidence": [
+      "User: 'please go ahead and add the 2 checked bags under my name using my Gold membership'",
+      "Policy: 'The user can add but not remove checked bags.'",
+      "Policy: 'Before taking any actions that update the booking database ... you must list the action details and obtain explicit user confirmation (yes) to proceed.'",
+      "Reservation YAX4DR belongs to user chen_lee_6825 with total_baggages 0"
+    ]
+  },
+  "metrics": {
+    "operation_exact": true,
+    "authorization": {
+      "true_positive": 2,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "hard_predicates": {
+      "true_positive": 4,
+      "false_positive": 2,
+      "false_negative": 0,
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "f1": 0.8
+    },
+    "semantic_dependencies": {
+      "true_positive": 4,
+      "false_positive": 2,
+      "false_negative": 2,
+      "precision": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "f1": 0.6666666666666666
+    },
+    "tolerated_changes": {
+      "true_positive": 1,
+      "false_positive": 0,
+      "false_negative": 1,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666
+    },
+    "dangerous_omissions": []
+  }
+}

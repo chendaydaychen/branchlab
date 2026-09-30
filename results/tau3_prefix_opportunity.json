@@ -1,0 +1,408 @@
+{
+  "summary": {
+    "tasks": 26,
+    "trials_per_task": 3,
+    "total_tool_calls": 772,
+    "prefix_trie_nodes": 435,
+    "prefix_shareable_calls": 337,
+    "prefix_shareable_fraction": 0.4365284974093264,
+    "tasks_with_nonempty_common_prefix": 23,
+    "mean_common_prefix_calls": 5.230769230769231,
+    "read_calls": 642,
+    "distinct_read_calls_within_task": 251,
+    "memoizable_read_calls": 391,
+    "memoizable_read_fraction": 0.6090342679127726
+  },
+  "tasks": [
+    {
+      "task_id": "8",
+      "trace_lengths": [
+        8,
+        8,
+        8
+      ],
+      "common_prefix_calls": 1,
+      "total_calls": 24,
+      "trie_nodes": 15,
+      "prefix_shareable_calls": 9,
+      "read_calls": 21,
+      "distinct_read_calls": 7,
+      "memoizable_read_calls": 14
+    },
+    {
+      "task_id": "11",
+      "trace_lengths": [
+        7,
+        7,
+        7
+      ],
+      "common_prefix_calls": 7,
+      "total_calls": 21,
+      "trie_nodes": 7,
+      "prefix_shareable_calls": 14,
+      "read_calls": 18,
+      "distinct_read_calls": 6,
+      "memoizable_read_calls": 12
+    },
+    {
+      "task_id": "12",
+      "trace_lengths": [
+        5,
+        5,
+        5
+      ],
+      "common_prefix_calls": 5,
+      "total_calls": 15,
+      "trie_nodes": 5,
+      "prefix_shareable_calls": 10,
+      "read_calls": 12,
+      "distinct_read_calls": 4,
+      "memoizable_read_calls": 8
+    },
+    {
+      "task_id": "14",
+      "trace_lengths": [
+        8,
+        8,
+        8
+      ],
+      "common_prefix_calls": 8,
+      "total_calls": 24,
+      "trie_nodes": 8,
+      "prefix_shareable_calls": 16,
+      "read_calls": 18,
+      "distinct_read_calls": 6,
+      "memoizable_read_calls": 12
+    },
+    {
+      "task_id": "15",
+      "trace_lengths": [
+        6,
+        5,
+        7
+      ],
+      "common_prefix_calls": 5,
+      "total_calls": 18,
+      "trie_nodes": 8,
+      "prefix_shareable_calls": 10,
+      "read_calls": 17,
+      "distinct_read_calls": 7,
+      "memoizable_read_calls": 10
+    },
+    {
+      "task_id": "7",
+      "trace_lengths": [
+        13,
+        9,
+        12
+      ],
+      "common_prefix_calls": 0,
+      "total_calls": 34,
+      "trie_nodes": 32,
+      "prefix_shareable_calls": 2,
+      "read_calls": 29,
+      "distinct_read_calls": 15,
+      "memoizable_read_calls": 14
+    },
+    {
+      "task_id": "16",
+      "trace_lengths": [
+        6,
+        6,
+        6
+      ],
+      "common_prefix_calls": 6,
+      "total_calls": 18,
+      "trie_nodes": 6,
+      "prefix_shareable_calls": 12,
+      "read_calls": 15,
+      "distinct_read_calls": 5,
+      "memoizable_read_calls": 10
+    },
+    {
+      "task_id": "19",
+      "trace_lengths": [
+        5,
+        5,
+        5
+      ],
+      "common_prefix_calls": 5,
+      "total_calls": 15,
+      "trie_nodes": 5,
+      "prefix_shareable_calls": 10,
+      "read_calls": 12,
+      "distinct_read_calls": 4,
+      "memoizable_read_calls": 8
+    },
+    {
+      "task_id": "17",
+      "trace_lengths": [
+        9,
+        9,
+        9
+      ],
+      "common_prefix_calls": 7,
+      "total_calls": 27,
+      "trie_nodes": 11,
+      "prefix_shareable_calls": 16,
+      "read_calls": 18,
+      "distinct_read_calls": 6,
+      "memoizable_read_calls": 12
+    },
+    {
+      "task_id": "20",
+      "trace_lengths": [
+        9,
+        6,
+        6
+      ],
+      "common_prefix_calls": 1,
+      "total_calls": 21,
+      "trie_nodes": 14,
+      "prefix_shareable_calls": 7,
+      "read_calls": 18,
+      "distinct_read_calls": 8,
+      "memoizable_read_calls": 10
+    },
+    {
+      "task_id": "18",
+      "trace_lengths": [
+        26,
+        25,
+        24
+      ],
+      "common_prefix_calls": 20,
+      "total_calls": 75,
+      "trie_nodes": 33,
+      "prefix_shareable_calls": 42,
+      "read_calls": 58,
+      "distinct_read_calls": 20,
+      "memoizable_read_calls": 38
+    },
+    {
+      "task_id": "22",
+      "trace_lengths": [
+        9,
+        9,
+        9
+      ],
+      "common_prefix_calls": 6,
+      "total_calls": 27,
+      "trie_nodes": 12,
+      "prefix_shareable_calls": 15,
+      "read_calls": 18,
+      "distinct_read_calls": 6,
+      "memoizable_read_calls": 12
+    },
+    {
+      "task_id": "21",
+      "trace_lengths": [
+        12,
+        14,
+        12
+      ],
+      "common_prefix_calls": 10,
+      "total_calls": 38,
+      "trie_nodes": 16,
+      "prefix_shareable_calls": 22,
+      "read_calls": 32,
+      "distinct_read_calls": 12,
+      "memoizable_read_calls": 20
+    },
+    {
+      "task_id": "24",
+      "trace_lengths": [
+        20,
+        18,
+        22
+      ],
+      "common_prefix_calls": 0,
+      "total_calls": 60,
+      "trie_nodes": 56,
+      "prefix_shareable_calls": 4,
+      "read_calls": 57,
+      "distinct_read_calls": 21,
+      "memoizable_read_calls": 36
+    },
+    {
+      "task_id": "23",
+      "trace_lengths": [
+        12,
+        10,
+        10
+      ],
+      "common_prefix_calls": 0,
+      "total_calls": 32,
+      "trie_nodes": 29,
+      "prefix_shareable_calls": 3,
+      "read_calls": 20,
+      "distinct_read_calls": 8,
+      "memoizable_read_calls": 12
+    },
+    {
+      "task_id": "25",
+      "trace_lengths": [
+        6,
+        7,
+        4
+      ],
+      "common_prefix_calls": 2,
+      "total_calls": 17,
+      "trie_nodes": 13,
+      "prefix_shareable_calls": 4,
+      "read_calls": 12,
+      "distinct_read_calls": 6,
+      "memoizable_read_calls": 6
+    },
+    {
+      "task_id": "29",
+      "trace_lengths": [
+        6,
+        3,
+        4
+      ],
+      "common_prefix_calls": 2,
+      "total_calls": 13,
+      "trie_nodes": 7,
+      "prefix_shareable_calls": 6,
+      "read_calls": 11,
+      "distinct_read_calls": 5,
+      "memoizable_read_calls": 6
+    },
+    {
+      "task_id": "30",
+      "trace_lengths": [
+        4,
+        4,
+        4
+      ],
+      "common_prefix_calls": 4,
+      "total_calls": 12,
+      "trie_nodes": 4,
+      "prefix_shareable_calls": 8,
+      "read_calls": 9,
+      "distinct_read_calls": 3,
+      "memoizable_read_calls": 6
+    },
+    {
+      "task_id": "33",
+      "trace_lengths": [
+        6,
+        6,
+        6
+      ],
+      "common_prefix_calls": 1,
+      "total_calls": 18,
+      "trie_nodes": 11,
+      "prefix_shareable_calls": 7,
+      "read_calls": 12,
+      "distinct_read_calls": 4,
+      "memoizable_read_calls": 8
+    },
+    {
+      "task_id": "35",
+      "trace_lengths": [
+        10,
+        8,
+        10
+      ],
+      "common_prefix_calls": 5,
+      "total_calls": 28,
+      "trie_nodes": 13,
+      "prefix_shareable_calls": 15,
+      "read_calls": 25,
+      "distinct_read_calls": 9,
+      "memoizable_read_calls": 16
+    },
+    {
+      "task_id": "32",
+      "trace_lengths": [
+        8,
+        8,
+        8
+      ],
+      "common_prefix_calls": 5,
+      "total_calls": 24,
+      "trie_nodes": 12,
+      "prefix_shareable_calls": 12,
+      "read_calls": 24,
+      "distinct_read_calls": 10,
+      "memoizable_read_calls": 14
+    },
+    {
+      "task_id": "40",
+      "trace_lengths": [
+        3,
+        3,
+        2
+      ],
+      "common_prefix_calls": 1,
+      "total_calls": 8,
+      "trie_nodes": 4,
+      "prefix_shareable_calls": 4,
+      "read_calls": 5,
+      "distinct_read_calls": 2,
+      "memoizable_read_calls": 3
+    },
+    {
+      "task_id": "37",
+      "trace_lengths": [
+        12,
+        12,
+        12
+      ],
+      "common_prefix_calls": 4,
+      "total_calls": 36,
+      "trie_nodes": 26,
+      "prefix_shareable_calls": 10,
+      "read_calls": 33,
+      "distinct_read_calls": 13,
+      "memoizable_read_calls": 20
+    },
+    {
+      "task_id": "39",
+      "trace_lengths": [
+        28,
+        11,
+        11
+      ],
+      "common_prefix_calls": 8,
+      "total_calls": 50,
+      "trie_nodes": 32,
+      "prefix_shareable_calls": 18,
+      "read_calls": 44,
+      "distinct_read_calls": 28,
+      "memoizable_read_calls": 16
+    },
+    {
+      "task_id": "42",
+      "trace_lengths": [
+        10,
+        11,
+        10
+      ],
+      "common_prefix_calls": 8,
+      "total_calls": 31,
+      "trie_nodes": 13,
+      "prefix_shareable_calls": 18,
+      "read_calls": 24,
+      "distinct_read_calls": 8,
+      "memoizable_read_calls": 16
+    },
+    {
+      "task_id": "44",
+      "trace_lengths": [
+        29,
+        30,
+        27
+      ],
+      "common_prefix_calls": 15,
+      "total_calls": 86,
+      "trie_nodes": 43,
+      "prefix_shareable_calls": 43,
+      "read_calls": 80,
+      "distinct_read_calls": 28,
+      "memoizable_read_calls": 52
+    }
+  ]
+}

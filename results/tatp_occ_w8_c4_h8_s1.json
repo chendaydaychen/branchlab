@@ -1,0 +1,22 @@
+{
+  "workload": "tatp-derived-update-location",
+  "official_benchmark_result": false,
+  "mode": "occ",
+  "seed": 1,
+  "workers": 8,
+  "tasks": 40,
+  "candidates_per_task": 4,
+  "hot_subscribers": 8,
+  "operations": 160,
+  "committed": 160,
+  "failed": 0,
+  "aborts": 102,
+  "throughput_ops_s": 94.01019357346954,
+  "latency_ms": {
+    "p50": 51.885185000003275,
+    "p95": 163.16703494999558
+  },
+  "lock_wait_ms_total": 0.0,
+  "discovery_executions": 160,
+  "discovery_reuse_hits": 0
+}

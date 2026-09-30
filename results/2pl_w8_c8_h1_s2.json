@@ -1,0 +1,22 @@
+{
+  "mode": "2pl",
+  "seed": 2,
+  "workers": 8,
+  "tasks": 40,
+  "candidates_per_task": 8,
+  "hot_flights": 1,
+  "think_ms": 8,
+  "operations": 320,
+  "committed": 320,
+  "failed": 0,
+  "aborts": 0,
+  "retry_rate": 0.0,
+  "throughput_ops_s": 76.3450523633671,
+  "elapsed_s": 4.191496240999982,
+  "latency_ms": {
+    "p50": 102.79788449997795,
+    "p95": 110.61763469999163,
+    "mean": 103.4579968749977
+  },
+  "lock_wait_ms_total": 26814.663474999805
+}

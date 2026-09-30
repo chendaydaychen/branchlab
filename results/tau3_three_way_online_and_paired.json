@@ -1,0 +1,132 @@
+{
+  "online_normal_path": {
+    "2pl": {
+      "mode": "2pl",
+      "successful": 3,
+      "db_match": 3,
+      "branches": 3,
+      "prefix_messages": 12,
+      "prefix_reads": 4,
+      "continuation_reads": 0,
+      "physical_reads": 4,
+      "shared_hits": 0,
+      "semantic_rebases": 0,
+      "mean_continuation_s": 11.663111101,
+      "actual_cost_usd": 0.013371455999999999
+    },
+    "occ": {
+      "mode": "occ",
+      "successful": 3,
+      "db_match": 3,
+      "branches": 3,
+      "prefix_messages": 10,
+      "prefix_reads": 4,
+      "continuation_reads": 6,
+      "physical_reads": 10,
+      "shared_hits": 0,
+      "semantic_rebases": 0,
+      "mean_continuation_s": 19.48641331033333,
+      "actual_cost_usd": 0.020421288000000003
+    },
+    "branchlab": {
+      "mode": "branchlab",
+      "successful": 3,
+      "db_match": 3,
+      "branches": 3,
+      "prefix_messages": 10,
+      "prefix_reads": 4,
+      "continuation_reads": 6,
+      "physical_reads": 6,
+      "shared_hits": 4,
+      "semantic_rebases": 3,
+      "mean_continuation_s": 15.320123191333323,
+      "actual_cost_usd": 0.016416348
+    }
+  },
+  "paired_benign": {
+    "2pl": {
+      "traces": 78,
+      "write_bearing_traces": 71,
+      "disturbance_covered_traces": 71,
+      "transaction_accepted": 71,
+      "transaction_rejected": 0,
+      "physical_reads": 642,
+      "shared_read_hits": 0,
+      "validation_failures": 0,
+      "semantic_rebases": 0,
+      "disturbances_applied": 0,
+      "disturbances_blocked": 71
+    },
+    "occ": {
+      "traces": 78,
+      "write_bearing_traces": 71,
+      "disturbance_covered_traces": 71,
+      "transaction_accepted": 0,
+      "transaction_rejected": 71,
+      "physical_reads": 615,
+      "shared_read_hits": 0,
+      "validation_failures": 71,
+      "semantic_rebases": 0,
+      "disturbances_applied": 71,
+      "disturbances_blocked": 0
+    },
+    "branchlab": {
+      "traces": 78,
+      "write_bearing_traces": 71,
+      "disturbance_covered_traces": 71,
+      "transaction_accepted": 71,
+      "transaction_rejected": 0,
+      "physical_reads": 252,
+      "shared_read_hits": 390,
+      "validation_failures": 0,
+      "semantic_rebases": 130,
+      "disturbances_applied": 71,
+      "disturbances_blocked": 0
+    }
+  },
+  "paired_harmful": {
+    "2pl": {
+      "traces": 78,
+      "write_bearing_traces": 71,
+      "disturbance_covered_traces": 71,
+      "transaction_accepted": 71,
+      "transaction_rejected": 0,
+      "physical_reads": 642,
+      "shared_read_hits": 0,
+      "validation_failures": 0,
+      "semantic_rebases": 0,
+      "disturbances_applied": 0,
+      "disturbances_blocked": 71
+    },
+    "occ": {
+      "traces": 78,
+      "write_bearing_traces": 71,
+      "disturbance_covered_traces": 71,
+      "transaction_accepted": 0,
+      "transaction_rejected": 71,
+      "physical_reads": 615,
+      "shared_read_hits": 0,
+      "validation_failures": 71,
+      "semantic_rebases": 0,
+      "disturbances_applied": 71,
+      "disturbances_blocked": 0
+    },
+    "branchlab": {
+      "traces": 78,
+      "write_bearing_traces": 71,
+      "disturbance_covered_traces": 71,
+      "transaction_accepted": 0,
+      "transaction_rejected": 71,
+      "physical_reads": 235,
+      "shared_read_hits": 380,
+      "validation_failures": 71,
+      "semantic_rebases": 0,
+      "disturbances_applied": 71,
+      "disturbances_blocked": 0
+    }
+  },
+  "interpretation": {
+    "online_role": "生态有效性与端到端正确性；轨迹切点不同，不用于系统间性能排序",
+    "paired_role": "固定相同78条DeepSeek真实轨迹，隔离事务控制器差异，用于因果比较"
+  }
+}

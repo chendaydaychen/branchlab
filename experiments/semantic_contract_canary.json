@@ -1,0 +1,82 @@
+[
+  {
+    "task_id": "12",
+    "operation": "update_reservation_baggages",
+    "user_visible_context": "The authenticated user asks to add two checked bags to an existing reservation. The agent has identified the reservation and must obtain confirmation before writing.",
+    "gold_contract": {
+      "version": "branchlab.contract.v1",
+      "task_id": "12",
+      "operation": "update_reservation_baggages",
+      "authorization": ["authenticated_user", "explicit_user_confirmation"],
+      "hard_predicates": ["reservation_exists", "reservation_owned_by_user", "reservation_active", "baggage_not_decreased"],
+      "semantic_dependencies": ["reservation.user_id", "reservation.status", "reservation.total_baggages", "reservation.passengers", "user.membership", "reservation.cabin"],
+      "tolerated_changes": ["unrelated_field_change", "metadata_only_change"],
+      "write_effects": ["reservation.total_baggages := confirmed_total"],
+      "source_evidence": ["user requested two checked bags", "policy requires confirmation before baggage updates"]
+    }
+  },
+  {
+    "task_id": "39",
+    "operation": "cancel_reservation",
+    "user_visible_context": "The authenticated user asks to cancel upcoming reservations. For each reservation, the agent has inspected its itinerary, booking conditions, insurance and cancellation reason, and must cancel only eligible reservations after confirmation.",
+    "gold_contract": {
+      "version": "branchlab.contract.v1",
+      "task_id": "39",
+      "operation": "cancel_reservation",
+      "authorization": ["authenticated_user", "explicit_user_confirmation"],
+      "hard_predicates": ["reservation_exists", "reservation_owned_by_user", "reservation_active", "no_segment_flown", "cancellation_policy_eligible", "refund_destination_unchanged"],
+      "semantic_dependencies": ["reservation.user_id", "reservation.status", "reservation.flights.status", "reservation.created_at", "reservation.cabin", "reservation.insurance", "cancellation.reason", "reservation.payment_history"],
+      "tolerated_changes": ["unrelated_field_change", "metadata_only_change"],
+      "write_effects": ["reservation.status := cancelled", "refund.destination := original_payment_methods"],
+      "source_evidence": ["user requested cancellation", "policy restricts cancellation eligibility and refund destination"]
+    }
+  },
+  {
+    "task_id": "40",
+    "operation": "update_reservation_passengers",
+    "user_visible_context": "The authenticated user asks to correct a passenger name on an existing reservation. The reservation has been identified, and the number of passengers must remain unchanged. The agent must obtain confirmation before writing.",
+    "gold_contract": {
+      "version": "branchlab.contract.v1",
+      "task_id": "40",
+      "operation": "update_reservation_passengers",
+      "authorization": ["authenticated_user", "explicit_user_confirmation"],
+      "hard_predicates": ["reservation_exists", "reservation_owned_by_user", "reservation_active", "passenger_count_unchanged"],
+      "semantic_dependencies": ["reservation.user_id", "reservation.status", "reservation.passengers.count"],
+      "tolerated_changes": ["unrelated_field_change", "metadata_only_change"],
+      "write_effects": ["reservation.passengers := confirmed_passenger_records"],
+      "source_evidence": ["user requested a passenger name correction", "policy forbids changing passenger count"]
+    }
+  },
+  {
+    "task_id": "15",
+    "operation": "update_reservation_flights",
+    "user_visible_context": "The authenticated user asks to change an existing itinerary while preserving its route and trip type. The selected replacement must remain available for all passengers and the user must confirm the quoted change.",
+    "gold_contract": {
+      "version": "branchlab.contract.v1",
+      "task_id": "15",
+      "operation": "update_reservation_flights",
+      "authorization": ["authenticated_user", "explicit_user_confirmation", "payment_method_owned_by_user"],
+      "hard_predicates": ["reservation_exists", "reservation_owned_by_user", "reservation_active", "origin_unchanged", "destination_unchanged", "trip_type_unchanged", "target_flight_available", "seats_sufficient", "payment_method_valid"],
+      "semantic_dependencies": ["reservation.user_id", "reservation.status", "reservation.origin", "reservation.destination", "reservation.flight_type", "reservation.passengers.count", "reservation.flights", "target_flight.status", "target_flight.available_seats", "target_flight.prices", "user.payment_methods"],
+      "tolerated_changes": ["unrelated_field_change", "price_decrease_within_user_limit", "seat_increase", "metadata_only_change"],
+      "write_effects": ["reservation.flights := confirmed_itinerary", "reservation.cabin := confirmed_cabin", "reservation.payment_history += price_difference"],
+      "source_evidence": ["user requested an itinerary change", "policy forbids changing origin, destination, and trip type"]
+    }
+  },
+  {
+    "task_id": "20",
+    "operation": "book_reservation",
+    "user_visible_context": "The authenticated user asks to book a one-way flight subject to itinerary, time, cabin and payment constraints. The agent has found a concrete itinerary and must obtain confirmation before booking.",
+    "gold_contract": {
+      "version": "branchlab.contract.v1",
+      "task_id": "20",
+      "operation": "book_reservation",
+      "authorization": ["authenticated_user", "explicit_user_confirmation", "payment_method_owned_by_user"],
+      "hard_predicates": ["target_flight_available", "seats_sufficient", "cabin_consistent", "payment_method_valid", "booking_passenger_limit_respected", "selected_itinerary_unchanged"],
+      "semantic_dependencies": ["user.user_id", "user.payment_methods", "request.origin", "request.destination", "request.flight_type", "request.cabin", "request.passengers", "target_flight.status", "target_flight.available_seats", "target_flight.prices"],
+      "tolerated_changes": ["unrelated_field_change", "price_decrease_within_user_limit", "seat_increase", "metadata_only_change"],
+      "write_effects": ["reservation := confirmed_booking", "payment_methods := confirmed_charge", "target_flight.available_seats -= passenger_count"],
+      "source_evidence": ["user requested a one-way booking", "policy constrains passengers, cabin, payment methods, and availability"]
+    }
+  }
+]

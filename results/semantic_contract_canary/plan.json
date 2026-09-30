@@ -1,0 +1,20 @@
+[
+  {
+    "task_id": "15",
+    "operation": "update_reservation_flights",
+    "prompt_chars": 18873,
+    "prompt_sha256": "4f7d1c9a1081c3feeff252b0b45d9a127f1cb0e0a45c8d51a29a55f807940ec0",
+    "uses_recorded_trace": true,
+    "will_call_api": true,
+    "output": "/mnt/z/at/branchlab/results/semantic_contract_canary/task15.json"
+  },
+  {
+    "task_id": "20",
+    "operation": "book_reservation",
+    "prompt_chars": 26312,
+    "prompt_sha256": "e29f7bf511ee1866ef3bb2add594abb8bd03fc5341a9773250643abe770553f3",
+    "uses_recorded_trace": true,
+    "will_call_api": true,
+    "output": "/mnt/z/at/branchlab/results/semantic_contract_canary/task20.json"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "workload": "tatp-derived-update-location",
+  "official_benchmark_result": false,
+  "mode": "reuse_strict",
+  "semantic_validation": false,
+  "shared_prefix_reuse": true,
+  "winner_only": true,
+  "materialized": 19,
+  "seed": 4,
+  "workers": 8,
+  "tasks": 20,
+  "candidates_per_task": 4,
+  "hot_subscribers": 1,
+  "operations": 80,
+  "committed": 79,
+  "failed": 1,
+  "aborts": 117,
+  "throughput_ops_s": 61.27031591274413,
+  "latency_ms": {
+    "p50": 34.46838449998779,
+    "p95": 352.48406710001626
+  },
+  "lock_wait_ms_total": 0.0,
+  "discovery_executions": 20,
+  "discovery_reuse_hits": 60,
+  "invariant_violations": 0
+}

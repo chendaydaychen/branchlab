@@ -1,0 +1,55 @@
+{
+  "runs": {
+    "task7/seed800/2pl": {
+      "status": "complete",
+      "returncode": 0,
+      "elapsed_s": 96.242540186,
+      "log": "/mnt/z/at/branchlab/results/matrix_logs/task7_seed800_2pl.log",
+      "result": "/mnt/z/at/branchlab/results/tau3_independent_parallel_2pl_task7_r3_s800.json"
+    },
+    "task7/seed800/occ": {
+      "status": "failed",
+      "failure_reason": "deepseek_insufficient_balance",
+      "returncode": 1,
+      "elapsed_s": 73.977874556,
+      "log": "/mnt/z/at/branchlab/results/matrix_logs/task7_seed800_occ.log",
+      "result": "/mnt/z/at/branchlab/results/tau3_independent_parallel_occ_task7_r3_s800.json"
+    },
+    "task7/seed800/branchlab": {
+      "status": "failed",
+      "failure_reason": "deepseek_insufficient_balance",
+      "returncode": 1,
+      "elapsed_s": 20.08241128100002,
+      "log": "/mnt/z/at/branchlab/results/matrix_logs/task7_seed800_branchlab.log",
+      "result": "/mnt/z/at/branchlab/results/tau3_online_branch_branchlab_task7_b3_s800.json"
+    },
+    "task11/seed800/2pl": {
+      "status": "failed",
+      "failure_reason": "deepseek_insufficient_balance",
+      "returncode": 1,
+      "elapsed_s": 20.992115823999995,
+      "log": "/mnt/z/at/branchlab/results/matrix_logs/task11_seed800_2pl.log",
+      "result": "/mnt/z/at/branchlab/results/tau3_independent_parallel_2pl_task11_r3_s800.json"
+    },
+    "task11/seed800/occ": {
+      "status": "interrupted",
+      "failure_reason": "matrix_stopped_after_deepseek_insufficient_balance",
+      "log": "/mnt/z/at/branchlab/results/matrix_logs/task11_seed800_occ.log",
+      "result": "/mnt/z/at/branchlab/results/tau3_independent_parallel_occ_task11_r3_s800.json"
+    }
+  },
+  "config": {
+    "tasks": [
+      "12"
+    ],
+    "seeds": [
+      900
+    ],
+    "modes": [
+      "branchlab"
+    ],
+    "candidates": 1,
+    "temperature": 0.2,
+    "model": "deepseek/deepseek-flash"
+  }
+}

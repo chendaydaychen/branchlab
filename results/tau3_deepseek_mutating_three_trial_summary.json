@@ -1,0 +1,50 @@
+{
+  "simulations": 78,
+  "tasks": 26,
+  "trials_per_task": [
+    3
+  ],
+  "reward_mean": 0.7307692307692307,
+  "reward_successes": 57,
+  "db_matches": 58,
+  "duration_mean_s": 41.08273972351282,
+  "duration_p50_s": 37.85523879800007,
+  "duration_p95_s": 73.46426494460002,
+  "duration_p99_s": 94.36518160507002,
+  "agent_cost_total_usd": 0.765865704,
+  "user_cost_total_usd": 0.20707218,
+  "total_cost_usd": 0.972937884,
+  "mean_total_cost_usd": 0.012473562615384615,
+  "communicate_checks_met": 24,
+  "communicate_checks_total": 27,
+  "actions": {
+    "read": [
+      153,
+      159
+    ],
+    "write": [
+      120,
+      147
+    ],
+    "generic": [
+      0,
+      3
+    ]
+  },
+  "usage_by_role": {
+    "user": {
+      "calls": 424,
+      "prompt_tokens": 428599,
+      "completion_tokens": 139420,
+      "prompt_cache_hit_tokens": 302080,
+      "prompt_cache_miss_tokens": 126519
+    },
+    "assistant": {
+      "calls": 694,
+      "prompt_tokens": 5468782,
+      "completion_tokens": 447120,
+      "prompt_cache_hit_tokens": 4800384,
+      "prompt_cache_miss_tokens": 668398
+    }
+  }
+}

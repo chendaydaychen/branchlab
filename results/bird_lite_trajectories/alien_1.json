@@ -1,0 +1,53 @@
+{
+  "instance_id": "alien_1",
+  "database": "alien",
+  "candidate_count": 4,
+  "unique_candidates": 4,
+  "public_gt_available": false,
+  "results": [
+    {
+      "fingerprint": "d9fcedd995453453",
+      "duplicate": false,
+      "sql": "SELECT o.weathprofile AS condition_name, AVG(s.snrratio - 0.1 * ABS(s.noisefloordbm)) AS avg_quality, PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY s.snrratio - 0.1 * ABS(s.noisefloordbm)) AS median_quality, COUNT(*) AS usable_signals FROM observatories o JOIN telescopes t ON o.observstation = t.observstation JOIN signals s ON t.telescregistry = s.telescref WHERE s.snrratio IS NOT NULL AND s.noisefloordbm IS NOT NULL GROUP BY o.weathprofile ORDER BY avg_quality",
+      "execution": {
+        "ok": false,
+        "latency_ms": 32.977485000003526,
+        "error": "UndefinedTable",
+        "message": "relation \"observatories\" does not exist\nLINE 1: ...S median_quality, COUNT(*) AS usable_signals FROM observator...\n                                                             ^"
+      }
+    },
+    {
+      "fingerprint": "0bccaea6299b9252",
+      "duplicate": false,
+      "sql": "SELECT o.weathprofile AS condition_name, AVG(s.snrratio - 0.1 * ABS(s.noisefloordbm)) AS avg_quality, PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY s.snrratio - 0.1 * ABS(s.noisefloordbm)) AS median_quality, COUNT(*) AS usable_signals FROM observatories o JOIN telescopes t ON o.observstation = t.observstation JOIN signals s ON t.telescregistry = s.telescref WHERE s.snrratio IS NOT NULL AND s.noisefloordbm IS NOT NULL AND (s.snrratio - 0.1 * ABS(s.noisefloordbm)) > 0 GROUP BY o.weathprofile ORDER BY avg_quality",
+      "execution": {
+        "ok": false,
+        "latency_ms": 8.111009000003833,
+        "error": "UndefinedTable",
+        "message": "relation \"observatories\" does not exist\nLINE 1: ...S median_quality, COUNT(*) AS usable_signals FROM observator...\n                                                             ^"
+      }
+    },
+    {
+      "fingerprint": "2fb687d4b100373e",
+      "duplicate": false,
+      "sql": "SELECT o.weathprofile AS condition_name, AVG(s.snrratio - 0.1 * ABS(s.noisefloordbm)) AS avg_quality, PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY s.snrratio - 0.1 * ABS(s.noisefloordbm)) AS median_quality, COUNT(*) AS usable_signals FROM observatories o JOIN telescopes t ON o.observstation = t.observstation JOIN signals s ON t.telescregistry = s.telescref WHERE s.snrratio IS NOT NULL AND s.noisefloordbm IS NOT NULL AND s.rfistat = 'Clean' GROUP BY o.weathprofile ORDER BY avg_quality",
+      "execution": {
+        "ok": false,
+        "latency_ms": 7.741750000036518,
+        "error": "UndefinedTable",
+        "message": "relation \"observatories\" does not exist\nLINE 1: ...S median_quality, COUNT(*) AS usable_signals FROM observator...\n                                                             ^"
+      }
+    },
+    {
+      "fingerprint": "ef2179705c2ec4a4",
+      "duplicate": false,
+      "sql": "SELECT o.weathprofile AS condition_name, AVG(s.snrratio - 0.1 * ABS(s.noisefloordbm)) AS avg_quality, PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY s.snrratio - 0.1 * ABS(s.noisefloordbm)) AS median_quality, COUNT(*) AS usable_signals FROM observatories o JOIN telescopes t ON o.observstation = t.observstation JOIN signals s ON t.telescregistry = s.telescref WHERE s.snrratio IS NOT NULL AND s.noisefloordbm IS NOT NULL AND s.interflvl = 'Low' GROUP BY o.weathprofile ORDER BY avg_quality",
+      "execution": {
+        "ok": false,
+        "latency_ms": 7.65666800003828,
+        "error": "UndefinedTable",
+        "message": "relation \"observatories\" does not exist\nLINE 1: ...S median_quality, COUNT(*) AS usable_signals FROM observator...\n                                                             ^"
+      }
+    }
+  ]
+}

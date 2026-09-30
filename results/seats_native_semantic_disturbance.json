@@ -1,0 +1,62 @@
+{
+  "repetitions_per_case": 100,
+  "total_cases": 800,
+  "results": {
+    "branchlab": {
+      "benign_price_change": {
+        "accepted": 100,
+        "rejected": 0,
+        "false_accepts": 0,
+        "false_rejects": 0
+      },
+      "over_budget_change": {
+        "accepted": 0,
+        "rejected": 100,
+        "false_accepts": 0,
+        "false_rejects": 0
+      }
+    },
+    "pg_rc": {
+      "benign_price_change": {
+        "accepted": 100,
+        "rejected": 0,
+        "false_accepts": 0,
+        "false_rejects": 0
+      },
+      "over_budget_change": {
+        "accepted": 100,
+        "rejected": 0,
+        "false_accepts": 100,
+        "false_rejects": 0
+      }
+    },
+    "pg_rr": {
+      "benign_price_change": {
+        "accepted": 0,
+        "rejected": 100,
+        "false_accepts": 0,
+        "false_rejects": 100
+      },
+      "over_budget_change": {
+        "accepted": 0,
+        "rejected": 100,
+        "false_accepts": 0,
+        "false_rejects": 0
+      }
+    },
+    "pg_ssi": {
+      "benign_price_change": {
+        "accepted": 0,
+        "rejected": 100,
+        "false_accepts": 0,
+        "false_rejects": 100
+      },
+      "over_budget_change": {
+        "accepted": 0,
+        "rejected": 100,
+        "false_accepts": 0,
+        "false_rejects": 0
+      }
+    }
+  }
+}

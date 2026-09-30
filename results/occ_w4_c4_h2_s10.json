@@ -1,0 +1,25 @@
+{
+  "mode": "occ",
+  "seed": 10,
+  "workers": 4,
+  "tasks": 40,
+  "candidates_per_task": 4,
+  "hot_flights": 2,
+  "think_ms": 5,
+  "discovery_ms": 8,
+  "operations": 160,
+  "committed": 160,
+  "failed": 0,
+  "aborts": 147,
+  "retry_rate": 0.91875,
+  "throughput_ops_s": 62.38429956802795,
+  "elapsed_s": 2.564747878999995,
+  "latency_ms": {
+    "p50": 33.94709799999873,
+    "p95": 188.76361835000992,
+    "mean": 63.49392018749871
+  },
+  "lock_wait_ms_total": 0.0,
+  "discovery_executions": 160,
+  "discovery_reuse_hits": 0
+}
